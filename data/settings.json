@@ -4,5 +4,10 @@
   "ad_header_code": "",
   "ad_infeed_code": "",
   "ad_footer_code": "",
-  "bookmakers": []
+  "bookmakers": [
+    {
+      "name": "Sporty Bet Code",
+      "url": "http://www.sportybet.com/ng/?shareCode=QT98TP"
+    }
+  ]
 }
