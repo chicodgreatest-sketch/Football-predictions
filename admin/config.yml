@@ -58,3 +58,12 @@ collections:
           - { name: "ad_header_code", label: "Header Ad Code (HTML/JS snippet)", widget: "text", required: false, hint: "Paste your ad network's snippet, e.g. Google AdSense unit." }
           - { name: "ad_infeed_code", label: "In-Feed Ad Code (HTML/JS snippet)", widget: "text", required: false, hint: "Shown every 3rd prediction card." }
           - { name: "ad_footer_code", label: "Footer Ad Code (HTML/JS snippet)", widget: "text", required: false }
+          - name: "bookmakers"
+            label: "Bookmaker Links"
+            widget: "list"
+            required: false
+            summary: "{{fields.name}}"
+            hint: "Shown as 'Bet with' buttons on today's picks. Use your affiliate/booking links here."
+            fields:
+              - { name: "name", label: "Bookmaker Name", widget: "string" }
+              - { name: "url", label: "Booking / Affiliate Link", widget: "string" }

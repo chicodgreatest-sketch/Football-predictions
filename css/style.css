@@ -73,7 +73,36 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px 14px;
+  flex-wrap: wrap;
+}
+
+.site-nav {
+  display: flex;
+  gap: 16px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  order: 3;
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .site-nav { order: 0; width: auto; }
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--chalk-dim);
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--chalk);
+  border-bottom-color: var(--gold);
 }
 
 .brand {
@@ -377,6 +406,119 @@ img { max-width: 100%; display: block; }
 }
 
 .match-card .meter { margin-top: 12px; }
+
+/* ---------- Bookmaker CTAs ---------- */
+.bookie-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.bookie-btn {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--gold);
+  padding: 7px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.bookie-btn:hover { opacity: 0.88; }
+.bookie-btn:active { transform: scale(0.97); }
+
+.match-card .bookie-row { margin-top: 12px; }
+.match-card .bookie-btn {
+  background: transparent;
+  border: 1px solid var(--gold-dim);
+  color: var(--gold);
+  padding: 6px 10px;
+}
+
+.bookie-disclaimer {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--chalk-dim);
+  margin-top: 4px;
+}
+
+/* ---------- History page ---------- */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px 0 30px;
+}
+
+.stat-card {
+  background: var(--pitch-dark);
+  border: 1px solid var(--pitch-line);
+  border-radius: var(--radius);
+  padding: 16px 12px;
+  text-align: center;
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 6vw, 32px);
+  color: var(--gold);
+  line-height: 1;
+}
+
+.stat-value.neutral { color: var(--chalk); }
+
+.stat-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--chalk-dim);
+  margin-top: 6px;
+}
+
+.day-group {
+  margin-bottom: 26px;
+}
+
+.day-heading {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--chalk-dim);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 10px;
+}
+
+.filter-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: transparent;
+  border: 1px solid var(--pitch-line);
+  color: var(--chalk-dim);
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.filter-btn[aria-pressed="true"] {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: var(--gold-dim);
+}
 
 .status-tag {
   font-family: var(--font-mono);

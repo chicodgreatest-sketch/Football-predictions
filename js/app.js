@@ -43,7 +43,15 @@ function statusTag(status) {
   return "";
 }
 
-function matchCardHTML(p) {
+function bookieRowHTML(bookmakers) {
+  if (!bookmakers || bookmakers.length === 0) return "";
+  const buttons = bookmakers
+    .map(b => `<a class="bookie-btn" href="${b.url}" target="_blank" rel="noopener sponsored">${b.name}</a>`)
+    .join("");
+  return `<div class="bookie-row">${buttons}</div>`;
+}
+
+function matchCardHTML(p, bookmakers) {
   return `
     <article class="match-card">
       <div class="match-card-top">
@@ -60,6 +68,7 @@ function matchCardHTML(p) {
         ${statusTag(p.status)}
       </div>
       <div class="meter">${meterHTML(p.confidence)}</div>
+      ${bookieRowHTML(bookmakers)}
     </article>
   `;
 }
@@ -70,7 +79,7 @@ function adSlotHTML() {
   `;
 }
 
-function renderHero(p) {
+function renderHero(p, bookmakers) {
   const heroSection = document.getElementById("heroSection");
   if (!p) {
     heroSection.hidden = true;
@@ -82,6 +91,7 @@ function renderHero(p) {
   document.getElementById("heroTipType").textContent = p.tip_type || "Prediction";
   document.getElementById("heroPickValue").textContent = p.prediction;
   document.getElementById("heroMeter").innerHTML = meterHTML(p.confidence);
+  document.getElementById("heroBookies").innerHTML = bookieRowHTML(bookmakers);
 
   const metaBits = [];
   if (p.kickoff_time) metaBits.push(`<span>Kick-off <strong>${formatKickoff(p.kickoff_time)}</strong></span>`);
@@ -89,7 +99,7 @@ function renderHero(p) {
   document.getElementById("heroMeta").innerHTML = metaBits.join("");
 }
 
-function renderCards(predictions, featuredId) {
+function renderCards(predictions, featuredId, bookmakers) {
   const list = document.getElementById("cardList");
   const rest = predictions.filter(p => p.id !== featuredId);
 
@@ -100,7 +110,7 @@ function renderCards(predictions, featuredId) {
 
   let html = "";
   rest.forEach((p, i) => {
-    html += matchCardHTML(p);
+    html += matchCardHTML(p, bookmakers);
     if ((i + 1) % IN_FEED_AD_EVERY === 0 && i !== rest.length - 1) {
       html += adSlotHTML();
     }
@@ -143,9 +153,10 @@ async function init() {
     const todays = predictions.filter(p => (p.kickoff_time || "").slice(0, 10) === todayStr);
     if (todays.length > 0) predictions = todays;
 
+    const bookmakers = settings.bookmakers || [];
     const featured = predictions.find(p => p.featured) || predictions[0];
-    renderHero(featured || null);
-    renderCards(predictions, featured ? featured.id : null);
+    renderHero(featured || null, bookmakers);
+    renderCards(predictions, featured ? featured.id : null, bookmakers);
     applyAdCode(settings);
   } catch (err) {
     console.error(err);
