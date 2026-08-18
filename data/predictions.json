@@ -1,56 +1,56 @@
 {
   "predictions": [
     {
-      "id": "pred-001",
-      "kickoff_time": "2026-08-18T15:00:00Z",
-      "competition": "Premier League",
-      "home_team": "Arsenal",
-      "away_team": "Chelsea",
-      "tip_type": "Match Result",
-      "prediction": "Arsenal to Win",
-      "odds": "1.85",
-      "confidence": 78,
+      "kickoff_time": "2026-08-18T17:00:00.000+01:00",
+      "odds": "1.55",
+      "confidence": 69,
+      "featured": true,
+      "away_team": "Bayern Munich ",
+      "prediction": "Over 3.5",
       "status": "pending",
-      "featured": true
+      "id": "pred-001",
+      "home_team": "Heidenheim",
+      "tip_type": "Over/Under",
+      "competition": "Club friendly "
     },
     {
-      "id": "pred-002",
-      "kickoff_time": "2026-08-18T17:30:00Z",
-      "competition": "La Liga",
-      "home_team": "Real Madrid",
-      "away_team": "Sevilla",
-      "tip_type": "Both Teams to Score",
-      "prediction": "BTTS — Yes",
+      "kickoff_time": "2026-08-18T20:00:00.000+01:00",
       "odds": "1.70",
       "confidence": 64,
+      "featured": false,
+      "away_team": "Lyon",
+      "prediction": "BTTS — Yes",
       "status": "pending",
-      "featured": false
+      "id": "pred-002",
+      "home_team": "Fenerbahce Istanbul ",
+      "tip_type": "Both Teams to Score",
+      "competition": "UEFA Champions League"
     },
     {
-      "id": "pred-003",
       "kickoff_time": "2026-08-18T19:45:00Z",
-      "competition": "Serie A",
-      "home_team": "Inter Milan",
-      "away_team": "Napoli",
-      "tip_type": "Over/Under",
-      "prediction": "Over 2.5 Goals",
       "odds": "1.95",
       "confidence": 71,
+      "featured": false,
+      "away_team": "Napoli",
+      "prediction": "Over 2.5 Goals",
       "status": "pending",
-      "featured": false
+      "id": "pred-003",
+      "home_team": "Inter Milan",
+      "tip_type": "Over/Under",
+      "competition": "Serie A"
     },
     {
-      "id": "pred-004",
       "kickoff_time": "2026-08-18T20:00:00Z",
-      "competition": "Bundesliga",
-      "home_team": "Bayern Munich",
-      "away_team": "Dortmund",
-      "tip_type": "Match Result",
-      "prediction": "Bayern Munich to Win",
       "odds": "1.60",
       "confidence": 82,
+      "featured": false,
+      "away_team": "Dortmund",
+      "prediction": "Bayern Munich to Win",
       "status": "pending",
-      "featured": false
+      "id": "pred-004",
+      "home_team": "Bayern Munich",
+      "tip_type": "Match Result",
+      "competition": "Bundesliga"
     }
   ]
 }
