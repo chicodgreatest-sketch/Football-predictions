@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matchday — Daily Football Predictions</title>
+<meta name="description" content="Daily football predictions and match tips, updated every day.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Matchday — Daily Football Predictions">
+<meta property="og:description" content="Daily football predictions and match tips, updated every day.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="/" class="brand">
+      <span class="brand-mark">Match<span>day</span></span>
+      <span class="brand-tag">Daily Tips</span>
+    </a>
+    <span class="today-pill" id="todayPill">—</span>
+  </div>
+</header>
+
+<!-- AD: header banner -->
+<div class="ad-slot" data-slot="header">
+  <div class="ad-slot-inner" id="adHeader"></div>
+</div>
+
+<main class="wrap">
+
+  <section class="hero" id="heroSection" hidden>
+    <p class="hero-label">Today's Standout Pick</p>
+    <div class="hero-card">
+      <p class="hero-comp" id="heroComp"></p>
+      <h1 class="hero-teams" id="heroTeams"></h1>
+      <div class="hero-meta-row" id="heroMeta"></div>
+      <div class="hero-pick">
+        <p class="hero-pick-label" id="heroTipType">Prediction</p>
+        <p class="hero-pick-value" id="heroPickValue"></p>
+      </div>
+      <div class="meter" id="heroMeter"></div>
+    </div>
+  </section>
+
+  <h2 class="section-label">Today's Full Card</h2>
+  <div class="card-list" id="cardList">
+    <p class="empty-state">Loading today's predictions…</p>
+  </div>
+
+</main>
+
+<!-- AD: footer banner -->
+<div class="ad-slot" data-slot="footer">
+  <div class="ad-slot-inner" id="adFooter"></div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-disclaimer">
+      Predictions are for informational and entertainment purposes only and are not a guarantee of any outcome.
+      If you choose to bet, please do so responsibly and only with money you can afford to lose. 18+.
+    </p>
+    <div class="footer-links">
+      <a href="#" id="footerYear"></a>
+      <a href="/admin/">Admin</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

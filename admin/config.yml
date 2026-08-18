@@ -1,0 +1,60 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Enables local testing with `npx decap-server` (see README)
+local_backend: true
+
+media_folder: "assets"
+public_folder: "/assets"
+
+collections:
+  - name: "predictions"
+    label: "Daily Predictions"
+    files:
+      - name: "predictions"
+        label: "Today's Predictions"
+        file: "data/predictions.json"
+        fields:
+          - name: "predictions"
+            label: "Predictions"
+            widget: "list"
+            summary: "{{fields.home_team}} vs {{fields.away_team}} — {{fields.prediction}}"
+            fields:
+              - { name: "id", label: "ID (unique, no spaces)", widget: "string" }
+              - { name: "kickoff_time", label: "Kick-off Time", widget: "datetime" }
+              - { name: "competition", label: "Competition", widget: "string" }
+              - { name: "home_team", label: "Home Team", widget: "string" }
+              - { name: "away_team", label: "Away Team", widget: "string" }
+              - name: "tip_type"
+                label: "Tip Type"
+                widget: "select"
+                options:
+                  - "Match Result"
+                  - "Both Teams to Score"
+                  - "Over/Under"
+                  - "Correct Score"
+                  - "Double Chance"
+                  - "Other"
+              - { name: "prediction", label: "Prediction (shown to readers)", widget: "string" }
+              - { name: "odds", label: "Odds", widget: "string", required: false }
+              - { name: "confidence", label: "Confidence (0-100)", widget: "number", min: 0, max: 100, value_type: "int" }
+              - name: "status"
+                label: "Result Status"
+                widget: "select"
+                default: "pending"
+                options: ["pending", "won", "lost"]
+              - { name: "featured", label: "Feature as today's standout pick?", widget: "boolean", default: false }
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "settings"
+        label: "General Settings"
+        file: "data/settings.json"
+        fields:
+          - { name: "site_title", label: "Site Title", widget: "string" }
+          - { name: "tagline", label: "Tagline", widget: "string" }
+          - { name: "ad_header_code", label: "Header Ad Code (HTML/JS snippet)", widget: "text", required: false, hint: "Paste your ad network's snippet, e.g. Google AdSense unit." }
+          - { name: "ad_infeed_code", label: "In-Feed Ad Code (HTML/JS snippet)", widget: "text", required: false, hint: "Shown every 3rd prediction card." }
+          - { name: "ad_footer_code", label: "Footer Ad Code (HTML/JS snippet)", widget: "text", required: false }

@@ -1,0 +1,56 @@
+{
+  "predictions": [
+    {
+      "id": "pred-001",
+      "kickoff_time": "2026-08-18T15:00:00Z",
+      "competition": "Premier League",
+      "home_team": "Arsenal",
+      "away_team": "Chelsea",
+      "tip_type": "Match Result",
+      "prediction": "Arsenal to Win",
+      "odds": "1.85",
+      "confidence": 78,
+      "status": "pending",
+      "featured": true
+    },
+    {
+      "id": "pred-002",
+      "kickoff_time": "2026-08-18T17:30:00Z",
+      "competition": "La Liga",
+      "home_team": "Real Madrid",
+      "away_team": "Sevilla",
+      "tip_type": "Both Teams to Score",
+      "prediction": "BTTS — Yes",
+      "odds": "1.70",
+      "confidence": 64,
+      "status": "pending",
+      "featured": false
+    },
+    {
+      "id": "pred-003",
+      "kickoff_time": "2026-08-18T19:45:00Z",
+      "competition": "Serie A",
+      "home_team": "Inter Milan",
+      "away_team": "Napoli",
+      "tip_type": "Over/Under",
+      "prediction": "Over 2.5 Goals",
+      "odds": "1.95",
+      "confidence": 71,
+      "status": "pending",
+      "featured": false
+    },
+    {
+      "id": "pred-004",
+      "kickoff_time": "2026-08-18T20:00:00Z",
+      "competition": "Bundesliga",
+      "home_team": "Bayern Munich",
+      "away_team": "Dortmund",
+      "tip_type": "Match Result",
+      "prediction": "Bayern Munich to Win",
+      "odds": "1.60",
+      "confidence": 82,
+      "status": "pending",
+      "featured": false
+    }
+  ]
+}
