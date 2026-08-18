@@ -92,19 +92,6 @@
       "competition": "UEFA Europa League "
     },
     {
-      "kickoff_time": "2026-08-20T20:00:00.000+01:00",
-      "odds": "1.36",
-      "confidence": 95,
-      "featured": false,
-      "away_team": "AGF Aarhus",
-      "prediction": "Over 2.5",
-      "status": "pending",
-      "id": "Pred-008",
-      "home_team": "Benfica",
-      "tip_type": "Over/Under",
-      "competition": "UEFA Europa League "
-    },
-    {
       "kickoff_time": "2026-08-20T19:30:00.000+01:00",
       "odds": "1.42",
       "confidence": 70,
@@ -116,6 +103,19 @@
       "home_team": "Atalanta",
       "tip_type": "Over/Under",
       "competition": "UEFA Conference League "
+    },
+    {
+      "kickoff_time": "2026-08-20T20:00:00.000+01:00",
+      "odds": "1.36",
+      "confidence": 95,
+      "featured": false,
+      "away_team": "AGF Aarhus",
+      "prediction": "Over 2.5",
+      "status": "pending",
+      "id": "Pred-008",
+      "home_team": "Benfica",
+      "tip_type": "Over/Under",
+      "competition": "UEFA Europa League "
     },
     {
       "kickoff_time": "2026-08-20T19:30:00.000+01:00",
