@@ -532,6 +532,71 @@
       "home_team": "SK Rapid",
       "tip_type": "Double Chance",
       "competition": "Austria - Bundesliga"
+    },
+    {
+      "kickoff_time": "2026-09-18T19:00:00.000+01:00",
+      "odds": "1.43",
+      "confidence": 90,
+      "featured": false,
+      "away_team": "Roda JC Kerkrade",
+      "prediction": "GG",
+      "status": "pending",
+      "id": "pred 39",
+      "home_team": "Jong Ajax Amsterdam ",
+      "tip_type": "Both Teams to Score",
+      "competition": "Netherlands - Eerste Divisie"
+    },
+    {
+      "kickoff_time": "2026-09-18T17:00:00.000+01:00",
+      "odds": "1.10",
+      "confidence": 95,
+      "featured": false,
+      "away_team": "FC Volendam",
+      "prediction": "Over 1.5 Goals",
+      "status": "pending",
+      "id": "pred 40",
+      "home_team": "Jong AZ Alkmaar",
+      "tip_type": "Over/Under",
+      "competition": "Netherlands - Eerste Divisie"
+    },
+    {
+      "kickoff_time": "2026-09-18T17:00:00.000+01:00",
+      "odds": "1.27",
+      "confidence": 90,
+      "featured": false,
+      "away_team": "VVV Venlo",
+      "prediction": "Home or Away",
+      "status": "pending",
+      "id": "pred 41",
+      "home_team": "Jong FC Utrecht",
+      "tip_type": "Double Chance",
+      "competition": "Netherlands - Eerste Divisie"
+    },
+    {
+      "kickoff_time": "2026-09-18T19:00:00.000+01:00",
+      "odds": "1.36",
+      "confidence": 75,
+      "featured": false,
+      "away_team": "Heracles Almelo",
+      "prediction": "Draw or Away",
+      "status": "pending",
+      "id": "pred 42",
+      "home_team": "Almere City",
+      "tip_type": "Double Chance",
+      "competition": "Netherlands - Eerste Divisie"
+    },
+    {
+      "kickoff_time": "2026-09-18T19:15:00.000+01:00",
+      "odds": "1.53",
+      "confidence": 90,
+      "featured": false,
+      "away_team": "FC Aarau",
+      "prediction": "Over 2.5 Goals",
+      "status": "pending",
+      "id": "pred 43",
+      "home_team": "FC Winterthur",
+      "tip_type": "Over/Under",
+      "competition": "Switzerland - Challenge League"
     }
   ]
 }
