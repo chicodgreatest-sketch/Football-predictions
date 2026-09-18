@@ -467,6 +467,71 @@
       "home_team": "RSC Anderlecht",
       "tip_type": "Match Result",
       "competition": "UEFA Europa League"
+    },
+    {
+      "kickoff_time": "2026-09-18T20:00:00.000+01:00",
+      "odds": "1.34",
+      "confidence": 90,
+      "featured": false,
+      "away_team": "Chelsea",
+      "prediction": "Draw or GG",
+      "status": "pending",
+      "id": "pred 34",
+      "home_team": "Brentford",
+      "tip_type": "Double Chance",
+      "competition": "England - Premier League"
+    },
+    {
+      "kickoff_time": "2026-09-18T20:00:00.000+01:00",
+      "odds": "1.23",
+      "confidence": 90,
+      "featured": false,
+      "away_team": "Elche CF",
+      "prediction": "Home or Draw",
+      "status": "pending",
+      "id": "pred 35",
+      "home_team": "Espanyol",
+      "tip_type": "Double Chance",
+      "competition": "Spain - Laliga"
+    },
+    {
+      "kickoff_time": "2026-09-18T18:00:00.000+01:00",
+      "odds": "1.55",
+      "confidence": 90,
+      "featured": false,
+      "away_team": "Konyaspor",
+      "prediction": "Draw or GG",
+      "status": "pending",
+      "id": "Pred 36",
+      "home_team": "Kasimpasa Istanbul",
+      "tip_type": "Double Chance",
+      "competition": "Turkiye - Super Lig"
+    },
+    {
+      "kickoff_time": "2026-09-18T20:00:00.000+01:00",
+      "odds": "1.17",
+      "confidence": 95,
+      "featured": false,
+      "away_team": "Wartford",
+      "prediction": "Bristol City Over 0.5 Goals",
+      "status": "pending",
+      "id": "pred 37",
+      "home_team": "Bristol City",
+      "tip_type": "Other",
+      "competition": "England - Championship "
+    },
+    {
+      "kickoff_time": "2026-09-18T18:30:00.000+01:00",
+      "odds": "1.11",
+      "confidence": 90,
+      "featured": true,
+      "away_team": "WSG Tirol ",
+      "prediction": "Home or Draw",
+      "status": "pending",
+      "id": "pred 38",
+      "home_team": "SK Rapid",
+      "tip_type": "Double Chance",
+      "competition": "Austria - Bundesliga"
     }
   ]
 }
